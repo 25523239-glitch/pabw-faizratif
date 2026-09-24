@@ -1,0 +1,40 @@
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-4);
+}
+
+/* SUSUNAN BAGIAN HALAMAN */
+main section {
+    margin-top: var(--section-gap);
+}
+
+/* KATALOG KARTU */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+}
+
+/* FOOTER */
+footer {
+    margin-top: var(--section-gap);
+    padding: var(--space-4);
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}

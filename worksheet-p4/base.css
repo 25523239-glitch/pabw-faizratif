@@ -1,0 +1,44 @@
+/* RESET RINGAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* TIPOGRAFI DAN WARNA DASAR */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: var(--text-3xl);
+}
+
+h2 {
+    font-size: var(--text-xl);
+}
+
+p {
+    font-size: var(--text-md);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* FOKUS KEYBOARD */
+:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}

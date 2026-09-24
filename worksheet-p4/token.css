@@ -1,0 +1,69 @@
+/* =====================================================
+   TOKENS.CSS
+   ===================================================== */
+
+
+/* =====================================================
+   LAPIS 1 — PRIMITIF
+   Nilai mentah
+   ===================================================== */
+
+:root {
+    /* Warna */
+    --blue-700: #1D3A8C;
+    --blue-500: #2563EB;
+
+    --gray-50: #F8FAFC;
+    --gray-900: #0F172A;
+
+    --white: #FFFFFF;
+    --gray-300: #D1D5DB;
+    --red-700: #B00020;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+
+    /* Radius */
+    --radius-md: 0.5rem;
+
+    /* Shadow */
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.10);
+
+    /* Ukuran huruf */
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-xl: 1.5rem;
+    --text-3xl: 2.25rem;
+}
+
+
+/* =====================================================
+   LAPIS 2 — SEMANTIK
+   Peran dari nilai token
+   ===================================================== */
+
+:root {
+    --color-bg: var(--gray-50);
+    --color-fg: var(--gray-900);
+    --color-surface: var(--white);
+    --color-border: var(--gray-300);
+    --color-primary: var(--blue-700);
+    --color-danger: var(--red-700);
+    --color-focus: var(--color-primary);
+
+    --card-pad: var(--space-4);
+    --section-gap: var(--space-6);
+    --nav-gap: var(--space-3);
+
+    --container-width: 1100px;
+    --banner-height: 300px;
+
+    --card-radius: var(--radius-md);
+    --control-radius: var(--radius-md);
+
+    --card-shadow: var(--shadow-1);
+}

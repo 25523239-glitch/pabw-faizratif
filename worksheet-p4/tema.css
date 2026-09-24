@@ -1,0 +1,17 @@
+/* =====================================================
+   TEMA GELAP
+   ===================================================== */
+
+[data-theme="dark"] {
+    --color-bg: #0F172A;
+    --color-fg: #F8FAFC;
+    --color-surface: #1E293B;
+    --color-border: #475569;
+    --color-primary: #2563EB;
+    --color-focus: #60A5FA;
+}
+
+/* PENGALIH MANUAL */
+.theme-toggle {
+    margin-top: var(--space-4);
+}

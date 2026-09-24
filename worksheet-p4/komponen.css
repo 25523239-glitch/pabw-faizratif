@@ -1,0 +1,95 @@
+/* KARTU */
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--card-pad);
+    box-shadow: var(--shadow-1);
+}
+
+/* NAVBAR LINK */
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-surface);
+    background-color: var(--color-primary);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+}
+
+/* TOMBOL */
+button {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    cursor: pointer;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-surface);
+}
+
+th {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--space-3);
+    text-align: center;
+}
+
+td {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    text-align: center;
+}
+
+/* GAMBAR */
+.banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    display: block;
+}
+
+/* FORM */
+form {
+    background-color: var(--color-surface);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+form p {
+    margin-bottom: var(--space-3);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: var(--space-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+}
+
+input:focus {
+    border-color: var(--color-focus);
+}
+
+/* RIWAYAT */
+.riwayat {
+    background-color: var(--color-surface);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+}
