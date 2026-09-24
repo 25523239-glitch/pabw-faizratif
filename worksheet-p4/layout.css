@@ -1,40 +1,51 @@
-/* NAVBAR */
-nav {
+/* HEADER */
+header {
+    padding-block: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* BARIS HEADER */
+.header-baris {
     display: flex;
-    justify-content: center;
-    gap: var(--space-3);
-    flex-wrap: wrap;
-    margin-bottom: var(--space-4);
-}
-
-/* SUSUNAN BAGIAN HALAMAN */
-main section {
-    margin-top: var(--section-gap);
-}
-
-/* KATALOG KARTU */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: center;
+    justify-content: space-between;
     gap: var(--space-4);
+    flex-wrap: wrap;
 }
 
-/* FOOTER */
-footer {
-    margin-top: var(--section-gap);
-    padding: var(--space-4);
-    text-align: center;
-    background-color: var(--color-primary);
-    color: var(--color-surface);
+
+/* NAVBAR */
+nav ul {
+    display: flex;
+    gap: var(--space-4);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* RESPONSIVE */
+
+/* LINK NAVIGASI */
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+
+/* HOVER */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
-    .card-grid {
-        grid-template-columns: 1fr;
+    .header-baris {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    nav {
-        flex-direction: column;
+    nav ul {
+        flex-wrap: wrap;
+        gap: var(--space-3);
     }
 }
