@@ -14,10 +14,11 @@ Topik halaman saya: Jadwal Dan Olahraga Saya
 - Bantuan AI
 - bagian gambar, label
 
--PERTEMUAN4 - Desaign Token Halaman Profil
+# PERTEMUAN4 - Desaign Token Halaman Profil
 Berkas gaya yang akan dibuat: tokens.css, base.css, layout.css, komponen.css, tema.css
 Warna utama: #2196F3 (biru), dipilih karena digunakan pada tombol, tautan navigasi, judul utama, dan garis fokus pada kode program.
 
+# Token yang saya tetapkan
 | Token             | Nilai     | Untuk apa                                                             |
 | ----------------- | --------- | --------------------------------------------------------------------- |
 | `--color-primary` | `#2196F3` | tombol, tautan, judul, dan penanda                                    |
