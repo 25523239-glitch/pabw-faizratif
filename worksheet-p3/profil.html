@@ -1,152 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Jadwal dan Catatan Olahraga Saya</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #f4f6f9;
-            color: #333;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
-            margin-bottom: 20px;
-        }
-
-        nav {
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        nav a {
-            margin-right: 15px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .deskripsi {
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .banner-img {
-            width: 100%;
-            max-height: 250px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #34495e;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            border-left: 4px solid #007bff;
-            padding-left: 10px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .form-group {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-
-        .form-control {
-            flex: 1;
-            min-width: 150px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-control label {
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-control input {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        .riwayat {
-            margin-top: 25px;
-        }
-
-        footer {
-            max-width: 800px;
-            margin: 20px auto 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -234,52 +91,34 @@
                 <!-- FORMULIR -->
                 <form>
 
-                    <div class="form-group">
+            <p>
+                <label for="tanggal">Tanggal Latihan:</label>
+                <input type="date" id="tanggal">
+            </p>
 
-                        <div class="form-control">
-                            <label for="tanggal">
-                                Tanggal Latihan
-                            </label>
+            <p>
+                <label for="jenis">Jenis Olahraga:</label>
+                <input
+                    type="text"
+                    id="jenis"
+                    placeholder="Contoh: Berenang"
+                >
+            </p>
 
-                            <input
-                                type="date"
-                                id="tanggal"
-                            >
-                        </div>
+            <p>
+                <label for="durasi">Durasi Latihan:</label>
+                <input
+                    type="number"
+                    id="durasi"
+                    placeholder="30"
+                >
+                menit
+            </p>
 
+            <button type="button">Catat Latihan</button>
 
-                        <div class="form-control">
-                            <label for="jenis">
-                                Jenis Olahraga
-                            </label>
-
-                            <input
-                                type="text"
-                                id="jenis"
-                                placeholder="Contoh: Berenang"
-                            >
-                        </div>
-
-
-                        <div class="form-control">
-                            <label for="durasi">
-                                Durasi Latihan (menit)
-                            </label>
-
-                            <input
-                                type="number"
-                                id="durasi"
-                                placeholder="30"
-                            >
-                        </div>
-
-                    </div>
-
-                    <button type="button">
-                        Catat Latihan
-                    </button>
-
-                </form>
+        </form>
+    </section>
 
 
                 <!-- RIWAYAT -->
@@ -322,4 +161,5 @@
     </footer>
 
 </body>
+
 </html>
