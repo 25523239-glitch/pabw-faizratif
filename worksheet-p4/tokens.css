@@ -10,14 +10,16 @@
 
 :root {
     /* Warna */
-    --blue-700: #1D3A8C;
-    --blue-500: #2563EB;
+   --blue-700: #1565C0;
+   --blue-600: #1976D2;
+   --blue-500: #2196F3;
 
-    --gray-50: #F8FAFC;
-    --gray-900: #0F172A;
+   --blue-50: #F0F7FF;
+   --gray-50: #F8FAFC;
+   --gray-900: #0F172A;
 
     --white: #FFFFFF;
-    --gray-300: #D1D5DB;
+   --gray-300: #D1D5DB;
     --red-700: #B00020;
 
     /* Spacing */
@@ -47,11 +49,20 @@
    ==================================================== */
 
 :root {
-    --color-bg: var(--gray-50);
+   --color-bg: var(--blue-50);
     --color-fg: var(--gray-900);
     --color-surface: var(--white);
     --color-border: var(--gray-300);
-    --color-primary: var(--blue-700);
+   --color-primary: var(--blue-500);
+   --color-primary-hover: var(--blue-700);
+   --color-heading: var(--blue-700);
+   --color-heading-accent: var(--blue-600);
+   --color-muted: #555555;
+   --color-surface-soft: var(--gray-50);
+   --color-surface-subtle: #F8FBFF;
+   --color-row-hover: #E3F2FD;
+   --color-footer-bg: var(--blue-700);
+   --color-footer-fg: var(--white);
     --color-danger: var(--red-700);
     --color-focus: var(--color-primary);
 

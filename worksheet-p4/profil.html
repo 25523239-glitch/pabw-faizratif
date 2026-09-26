@@ -5,16 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jadwal dan Catatan Olahraga Saya</title>
 
     <!-- Urutan pemuatan CSS -->
-    <!-- 1. Design token -->
+    <!-- 1. Design Token -->
     <link rel="stylesheet" href="tokens.css">
 
-    <!-- 2. Gaya dasar -->
+    <!-- 2. Gaya Dasar -->
     <link rel="stylesheet" href="base.css">
 
-    <!-- 3. Tata letak -->
+    <!-- 3. Tata Letak -->
     <link rel="stylesheet" href="layout.css">
 
     <!-- 4. Komponen -->
@@ -22,269 +23,32 @@
 
     <!-- 5. Tema -->
     <link rel="stylesheet" href="tema.css">
-
-    <style>
-        /* RESET */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* BODY */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f0f7ff;
-            color: #1f2937;
-            line-height: 1.6;
-        }
-
-        /* CONTAINER */
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 30px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        /* HEADER */
-        header {
-            text-align: center;
-        }
-
-        header h1 {
-            color: #1976d2;
-            margin: 25px 0 10px;
-            font-size: 32px;
-        }
-
-        .deskripsi {
-            color: #555;
-            margin-bottom: 25px;
-        }
-
-        /* NAVIGASI */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            background-color: #2196f3;
-            padding: 10px 18px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #1565c0;
-            transform: translateY(-2px);
-        }
-
-        /* BANNER */
-        .banner-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 12px;
-            display: block;
-            margin-top: 20px;
-        }
-
-        /* SECTION */
-        section,
-        .riwayat {
-            margin-top: 40px;
-        }
-
-        h2 {
-            color: #1565c0;
-            margin-bottom: 18px;
-            border-left: 5px solid #2196f3;
-            padding-left: 10px;
-        }
-
-        /* TABLE */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background-color: white;
-        }
-
-        th {
-            background-color: #2196f3;
-            color: white;
-            padding: 14px;
-            text-align: center;
-        }
-
-        td {
-            padding: 13px;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #f5faff;
-        }
-
-        tbody tr:hover {
-            background-color: #e3f2fd;
-        }
-
-        /* FORM */
-        form {
-            background-color: #f5faff;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #dbeafe;
-        }
-
-        form p {
-            margin-bottom: 18px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 7px;
-            color: #374151;
-        }
-
-        input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            font-size: 15px;
-            outline: none;
-        }
-
-        input:focus {
-            border-color: #2196f3;
-            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
-        }
-
-        button {
-            background-color: #2196f3;
-            color: white;
-            border: none;
-            padding: 12px 22px;
-            border-radius: 8px;
-            font-size: 15px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background-color: #1565c0;
-            transform: translateY(-2px);
-        }
-
-        /* RIWAYAT */
-        .riwayat {
-            background-color: #f8fbff;
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            background-color: #1565c0;
-            color: white;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 20px;
-            }
-
-            header h1 {
-                font-size: 25px;
-            }
-
-            .banner-img {
-                height: 200px;
-            }
-
-            table {
-                font-size: 14px;
-            }
-
-            th,
-            td {
-                padding: 9px;
-            }
-
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 15px;
-            }
-
-            header h1 {
-                font-size: 22px;
-            }
-
-            .banner-img {
-                height: 160px;
-            }
-
-            table {
-                font-size: 12px;
-            }
-
-            th,
-            td {
-                padding: 7px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- CONTAINER -->
     <div class="container">
 
-        <!-- HEADER -->
+        <!-- ================= HEADER ================= -->
         <header>
 
-            <!-- NAVIGASI -->
-            <nav>
-                <a href="#jadwal">Jadwal Mingguan</a>
-                <a href="#form">Formulir Latihan</a>
-                <a href="#riwayat">Riwayat Olahraga</a>
-            </nav>
+            <!-- BARIS JUDUL + NAVBAR -->
+            <div class="header-top">
 
-            <!-- JUDUL -->
-            <h1>Jadwal dan Catatan Olahraga Saya</h1>
+                <!-- JUDUL -->
+                <h1>Jadwal dan Catatan Olahraga Saya</h1>
 
+                <!-- NAVIGASI -->
+                <nav aria-label="Navigasi utama">
+                    <a href="#jadwal">Jadwal Mingguan</a>
+                    <a href="#form">Formulir Latihan</a>
+                    <a href="#riwayat">Riwayat Olahraga</a>
+                </nav>
+
+            </div>
+
+            <!-- DESKRIPSI -->
             <p class="deskripsi">
                 Halaman ini digunakan untuk merencanakan target mingguan
                 dan mencatat setiap aktivitas olahraga harian secara teratur.
@@ -293,116 +57,156 @@
             <!-- GAMBAR BANNER -->
             <img
                 src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
-                alt="Banner Olahraga"
+                alt="Banner olahraga"
                 class="banner-img"
             >
 
         </header>
 
-        <!-- MAIN -->
+
+        <!-- ================= MAIN ================= -->
         <main>
 
-            <!-- SECTION 1 -->
+            <!-- SECTION 1: JADWAL -->
             <section id="jadwal">
 
-                <h2>Target & Jadwal Mingguan</h2>
+                <h2>Target &amp; Jadwal Mingguan</h2>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Hari</th>
-                            <th>Jenis Olahraga</th>
-                            <th>Durasi (menit)</th>
-                            <th>Target Kalori</th>
-                        </tr>
-                    </thead>
+                <div class="table-wrap">
 
-                    <tbody>
-                        <tr>
-                            <td>Senin</td>
-                            <td>Lari Pagi</td>
-                            <td>30</td>
-                            <td>300 kcal</td>
-                        </tr>
+                    <table>
 
-                        <tr>
-                            <td>Rabu</td>
-                            <td>Angkat Beban</td>
-                            <td>45</td>
-                            <td>250 kcal</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Hari</th>
+                                <th>Jenis Olahraga</th>
+                                <th>Durasi (menit)</th>
+                                <th>Target Kalori</th>
+                            </tr>
+                        </thead>
 
-                        <tr>
-                            <td>Jumat</td>
-                            <td>Bersepeda</td>
-                            <td>60</td>
-                            <td>400 kcal</td>
-                        </tr>
-                    </tbody>
-                </table>
+                        <tbody>
+
+                            <tr>
+                                <td>Senin</td>
+                                <td>Lari Pagi</td>
+                                <td>30</td>
+                                <td>300 kcal</td>
+                            </tr>
+
+                            <tr>
+                                <td>Rabu</td>
+                                <td>Angkat Beban</td>
+                                <td>45</td>
+                                <td>250 kcal</td>
+                            </tr>
+
+                            <tr>
+                                <td>Jumat</td>
+                                <td>Bersepeda</td>
+                                <td>60</td>
+                                <td>400 kcal</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
 
             </section>
 
-            <!-- SECTION 2 -->
+
+            <!-- SECTION 2: FORMULIR -->
             <section id="form">
 
                 <h2>Formulir Latihan</h2>
 
-                <!-- FORMULIR -->
                 <form>
 
                     <p>
-                        <label for="tanggal">Tanggal Latihan:</label>
-                        <input type="date" id="tanggal">
+                        <label for="tanggal">
+                            Tanggal Latihan:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal"
+                        >
                     </p>
 
+
                     <p>
-                        <label for="jenis">Jenis Olahraga:</label>
+                        <label for="jenis">
+                            Jenis Olahraga:
+                        </label>
+
                         <input
                             type="text"
                             id="jenis"
+                            name="jenis"
                             placeholder="Contoh: Berenang"
                         >
                     </p>
 
+
                     <p>
-                        <label for="durasi">Durasi Latihan:</label>
+                        <label for="durasi">
+                            Durasi Latihan:
+                        </label>
+
                         <input
                             type="number"
                             id="durasi"
+                            name="durasi"
                             placeholder="30"
+                            min="1"
                         >
-                        menit
+
+                        <span>menit</span>
                     </p>
 
-                    <button type="button">Catat Latihan</button>
+
+                    <button type="button">
+                        Catat Latihan
+                    </button>
 
                 </form>
 
             </section>
 
-            <!-- RIWAYAT -->
+
+            <!-- SECTION 3: RIWAYAT -->
             <section id="riwayat" class="riwayat">
 
                 <h2>Riwayat Olahraga</h2>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tanggal</th>
-                            <th>Jenis Olahraga</th>
-                            <th>Durasi</th>
-                        </tr>
-                    </thead>
+                <div class="table-wrap">
 
-                    <tbody>
-                        <tr>
-                            <td>23 September 2026</td>
-                            <td>Lari Pagi</td>
-                            <td>30 menit</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Jenis Olahraga</th>
+                                <th>Durasi</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>23 September 2026</td>
+                                <td>Lari Pagi</td>
+                                <td>30 menit</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
 
             </section>
 
@@ -410,11 +214,14 @@
 
     </div>
 
-    <!-- FOOTER -->
+
+    <!-- ================= FOOTER ================= -->
     <footer>
+
         <p>
             Faiz Ratif Az Zubair · 25523239 · 2026
         </p>
+
     </footer>
 
 </body>

@@ -1,12 +1,34 @@
-/* HEADER */
+
+/* =====================================================
+   PAGE LAYOUT
+   ===================================================== */
+
+.container {
+    width: min(100%, var(--container-width));
+    margin-inline: auto;
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow);
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
 header {
     padding-block: var(--space-4);
     border-bottom: 1px solid var(--color-border);
 }
 
 
-/* BARIS HEADER */
-.header-baris {
+/* =====================================================
+   BARIS JUDUL + NAVBAR
+   ===================================================== */
+
+.header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,37 +37,195 @@ header {
 }
 
 
-/* NAVBAR */
-nav ul {
-    display: flex;
-    gap: var(--space-4);
-    list-style: none;
-    padding: 0;
+/* =====================================================
+   JUDUL
+   ===================================================== */
+
+header h1 {
     margin: 0;
+    color: var(--color-heading-accent);
 }
 
 
-/* LINK NAVIGASI */
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--nav-gap);
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   LINK NAVIGASI
+   ===================================================== */
+
 nav a {
     color: var(--color-primary);
     text-decoration: none;
+    white-space: nowrap;
 }
 
 
 /* HOVER */
+
 nav a:hover {
     text-decoration: underline;
 }
 
 
+/* =====================================================
+   DESKRIPSI
+   ===================================================== */
+
+.deskripsi {
+    max-width: 65ch;
+    margin-block: var(--space-4);
+    margin-inline: 0;
+    color: var(--color-muted);
+}
+
+
+/* =====================================================
+   BANNER
+   ===================================================== */
+
+.banner-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: var(--banner-height);
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-gap);
+    padding-block: var(--space-6);
+}
+
+
+/* =====================================================
+   SECTION
+   ===================================================== */
+
+section {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =====================================================
+   TABEL RESPONSIF
+   ===================================================== */
+
+.table-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    margin-top: var(--space-6);
+    padding-block: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-footer-bg);
+    color: var(--color-footer-fg);
+    font-size: var(--text-sm);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE — TABLET
+   ===================================================== */
+
 @media (max-width: 768px) {
-    .header-baris {
-        flex-direction: column;
+
+    .container {
+        width: min(100%, var(--container-width));
+        padding: var(--space-4);
+    }
+
+    .header-top {
         align-items: flex-start;
     }
 
-    nav ul {
-        flex-wrap: wrap;
+    nav {
+        justify-content: flex-start;
+    }
+
+    .deskripsi {
+        margin-inline: 0;
+    }
+
+    .banner-img {
+        height: auto;
+        min-height: 220px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE — MOBILE
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: var(--space-3);
+    }
+
+    header h1 {
+        font-size: var(--text-xl);
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
         gap: var(--space-3);
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+        gap: var(--space-2);
+    }
+
+    nav a {
+        white-space: normal;
+    }
+
+    main {
+        gap: var(--section-gap);
+    }
+
+    .banner-img {
+        height: auto;
+        min-height: 180px;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
     }
 }
