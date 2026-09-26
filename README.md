@@ -30,3 +30,6 @@ Warna utama: #2196F3 (biru), dipilih karena digunakan pada tombol, tautan naviga
 | `--space-4`       | `16px`    | jarak standar antar elemen seperti tabel dan beberapa bagian komponen |
 
 Kriteria selesai saya: Warna utama #2196F3 dipilih karena memberikan tampilan biru yang bersih dan digunakan secara konsisten pada tombol, tautan navigasi, judul, serta garis fokus pada halaman.
+
+#Penggunaan AI 
+- saya menggunakan ai pada bagian perubahan tema
