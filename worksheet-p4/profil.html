@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -8,7 +6,10 @@
 
     <title>Jadwal dan Catatan Olahraga Saya</title>
 
-    <!-- Urutan pemuatan CSS -->
+    <!-- =================================================
+         URUTAN PEMUATAN CSS
+         ================================================= -->
+
     <!-- 1. Design Token -->
     <link rel="stylesheet" href="tokens.css">
 
@@ -25,36 +26,87 @@
     <link rel="stylesheet" href="tema.css">
 </head>
 
+
 <body>
 
-    <!-- CONTAINER -->
+    <!-- =================================================
+         CONTAINER
+         ================================================= -->
+
     <div class="container">
 
-        <!-- ================= HEADER ================= -->
+
+        <!-- =================================================
+             HEADER
+             ================================================= -->
+
         <header>
 
-            <!-- BARIS JUDUL + NAVBAR -->
+            <!-- =================================================
+                 F.2 — PENGALIH TEMA
+                 Tanpa JavaScript
+                 ================================================= -->
+
+            <input
+                type="checkbox"
+                id="tema"
+                class="pengalih-tema"
+            >
+
+            <label
+                for="tema"
+                class="tombol-tema"
+            >
+                Tema gelap
+            </label>
+
+
+            <!-- =================================================
+                 BARIS JUDUL + NAVBAR
+                 ================================================= -->
+
             <div class="header-top">
 
                 <!-- JUDUL -->
-                <h1>Jadwal dan Catatan Olahraga Saya</h1>
+                <h1>
+                    Jadwal dan Catatan Olahraga Saya
+                </h1>
+
 
                 <!-- NAVIGASI -->
                 <nav aria-label="Navigasi utama">
-                    <a href="#jadwal">Jadwal Mingguan</a>
-                    <a href="#form">Formulir Latihan</a>
-                    <a href="#riwayat">Riwayat Olahraga</a>
+
+                    <a href="#jadwal">
+                        Jadwal Mingguan
+                    </a>
+
+                    <a href="#form">
+                        Formulir Latihan
+                    </a>
+
+                    <a href="#riwayat">
+                        Riwayat Olahraga
+                    </a>
+
                 </nav>
 
             </div>
 
-            <!-- DESKRIPSI -->
+
+            <!-- =================================================
+                 DESKRIPSI
+                 ================================================= -->
+
             <p class="deskripsi">
                 Halaman ini digunakan untuk merencanakan target mingguan
                 dan mencatat setiap aktivitas olahraga harian secara teratur.
             </p>
 
-            <!-- GAMBAR BANNER -->
+
+            <!-- =================================================
+                 GAMBAR BANNER
+                 ================================================= -->
+
             <img
                 src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
                 alt="Banner olahraga"
@@ -64,26 +116,39 @@
         </header>
 
 
-        <!-- ================= MAIN ================= -->
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
         <main>
 
-            <!-- SECTION 1: JADWAL -->
+
+            <!-- =================================================
+                 SECTION 1 — JADWAL
+                 ================================================= -->
+
             <section id="jadwal">
 
-                <h2>Target &amp; Jadwal Mingguan</h2>
+                <h2>
+                    Target &amp; Jadwal Mingguan
+                </h2>
+
 
                 <div class="table-wrap">
 
                     <table>
 
                         <thead>
+
                             <tr>
                                 <th>Hari</th>
                                 <th>Jenis Olahraga</th>
                                 <th>Durasi (menit)</th>
                                 <th>Target Kalori</th>
                             </tr>
+
                         </thead>
+
 
                         <tbody>
 
@@ -94,12 +159,14 @@
                                 <td>300 kcal</td>
                             </tr>
 
+
                             <tr>
                                 <td>Rabu</td>
                                 <td>Angkat Beban</td>
                                 <td>45</td>
                                 <td>250 kcal</td>
                             </tr>
+
 
                             <tr>
                                 <td>Jumat</td>
@@ -117,14 +184,23 @@
             </section>
 
 
-            <!-- SECTION 2: FORMULIR -->
+            <!-- =================================================
+                 SECTION 2 — FORMULIR
+                 ================================================= -->
+
             <section id="form">
 
-                <h2>Formulir Latihan</h2>
+                <h2>
+                    Formulir Latihan
+                </h2>
+
 
                 <form>
 
-                    <p>
+
+                    <!-- TANGGAL -->
+                    <div class="form-kolom">
+
                         <label for="tanggal">
                             Tanggal Latihan:
                         </label>
@@ -133,11 +209,19 @@
                             type="date"
                             id="tanggal"
                             name="tanggal"
+                            required
                         >
-                    </p>
+
+                        <p class="pesan-galat">
+                            Tanggal latihan wajib diisi.
+                        </p>
+
+                    </div>
 
 
-                    <p>
+                    <!-- JENIS OLAHRAGA -->
+                    <div class="form-kolom">
+
                         <label for="jenis">
                             Jenis Olahraga:
                         </label>
@@ -147,11 +231,19 @@
                             id="jenis"
                             name="jenis"
                             placeholder="Contoh: Berenang"
+                            required
                         >
-                    </p>
+
+                        <p class="pesan-galat">
+                            Jenis olahraga wajib diisi.
+                        </p>
+
+                    </div>
 
 
-                    <p>
+                    <!-- DURASI -->
+                    <div class="form-kolom">
+
                         <label for="durasi">
                             Durasi Latihan:
                         </label>
@@ -162,13 +254,18 @@
                             name="durasi"
                             placeholder="30"
                             min="1"
+                            required
                         >
 
-                        <span>menit</span>
-                    </p>
+                        <p class="pesan-galat">
+                            Durasi latihan harus diisi minimal 1 menit.
+                        </p>
+
+                    </div>
 
 
-                    <button type="button">
+                    <!-- TOMBOL -->
+                    <button type="submit">
                         Catat Latihan
                     </button>
 
@@ -177,22 +274,34 @@
             </section>
 
 
-            <!-- SECTION 3: RIWAYAT -->
-            <section id="riwayat" class="riwayat">
+            <!-- =================================================
+                 SECTION 3 — RIWAYAT
+                 ================================================= -->
 
-                <h2>Riwayat Olahraga</h2>
+            <section
+                id="riwayat"
+                class="riwayat"
+            >
+
+                <h2>
+                    Riwayat Olahraga
+                </h2>
+
 
                 <div class="table-wrap">
 
                     <table>
 
                         <thead>
+
                             <tr>
                                 <th>Tanggal</th>
                                 <th>Jenis Olahraga</th>
                                 <th>Durasi</th>
                             </tr>
+
                         </thead>
+
 
                         <tbody>
 
@@ -215,7 +324,10 @@
     </div>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =================================================
+         FOOTER
+         ================================================= -->
+
     <footer>
 
         <p>
@@ -227,4 +339,3 @@
 </body>
 
 </html>
-```
